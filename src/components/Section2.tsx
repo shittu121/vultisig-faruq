@@ -188,7 +188,7 @@ const HowItWorks = () => {
 
         {/* Steps Section - Small Screens */}
 <div className="w-full flex lg:hidden md:hidden mt-5">
-  <Carousel className="w-full h-[400px] pr-4">
+  <Carousel className="w-full h-[400px] pr-4 pl-2">
     <CarouselContent>
       {steps.map((step, index) => (
         <CarouselItem key={step.id} className="p-4">
@@ -222,7 +222,7 @@ const HowItWorks = () => {
       ))}
     </CarouselContent>
     <CarouselNavigation />
-    <CarouselIndicator className="top-[26.5rem]"/>
+    <CarouselIndicator className="top-[26.8rem]"/>
   </Carousel>
 </div>
       </BackgroundGradientAnimation>

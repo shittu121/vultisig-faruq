@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SlideArrowButton from "./download-button";
+import Image from "next/image";
 
 function HamburgerMenu() {
   const [open, setOpen] = useState<boolean>(false);
@@ -62,6 +63,9 @@ function HamburgerMenu() {
             className="fixed top-0 right-0 w-full h-full bg-[#112850] opacity-35 dark:bg-neutral-900 shadow-lg z-40 flex flex-col items-center py-10"
           >
             {/* Close Button (same as Hamburger) */}
+            <div className="flex justify-between items-center">
+              <Image src="/logo.png" alt="logo" height={20} width={100} className="z-20 w-40 absolute top-4 left-4"/>
+            
             <Button
               className="absolute top-4 right-4 bg-[#112850] hover:bg-[#112850]"
               onClick={() => setOpen(false)}
@@ -92,6 +96,7 @@ function HamburgerMenu() {
                 />
               </svg>
             </Button>
+            </div>
 
             {/* Navigation Items */}
             <nav className="flex flex-col justify-center text-center space-y-6 text-lg font-semibold m-auto">

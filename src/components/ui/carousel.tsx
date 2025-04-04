@@ -239,7 +239,7 @@ function CarouselIndicator({
             className={cn(
               'p-1.5 rounded-full transition-opacity duration-300',
               index === i
-                ? 'bg-[#F2CAB6]'
+                ? 'bg-gradient-to-r from-purple-500 to-blue-500'
                 : 'bg-white',
               classNameButton
             )}
