@@ -52,7 +52,7 @@ function Case() {
             <CarouselContent>
               {logos.map((item, index) => (
                 <CarouselItem className="basis-1/4 lg:basis-1/6" key={index}>
-                  <div className="flex flex-col items-center justify-center bg-none lg:bg-white/10 md:bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-6 text-center shrink-0 border-none lg:border md:border border-white/10 transition-all min-w-[120px] w-auto px-8">
+                  <div className="flex flex-col items-center justify-center lg:bg-white/10 md:bg-white/10 lg:backdrop-blur-lg md:backdrop-blur-lg rounded-2xl lg:shadow-xl md:shadow-xl p-6 text-center lg:border md:border border-white/10 transition-all min-w-[120px] w-auto px-8">
                     <Image
                       src={item.src}
                       alt={item.text}
